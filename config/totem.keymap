@@ -152,7 +152,7 @@
             bindings = <
         &kp EXCL             &kp AT               &kp HASH                          &kp DLLR                      &kp PRCNT            &kp CARET  &kp AMPERSAND            &kp ASTERISK                    &kp QUESTION              &kp SQT
         &hrmp LEFT_ALT PLUS  &hrm LEFT_GUI EQUAL  &hrm LEFT_SHIFT LEFT_PARENTHESIS  &hrm LCTRL RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES    &kp COLON  &hrm RCTRL LEFT_BRACKET  &hrm RIGHT_SHIFT RIGHT_BRACKET  &hrm LEFT_GUI LEFT_BRACE  &hrmp LEFT_ALT RIGHT_BRACE
-&trans  &kp LESS_THAN        &kp PIPE             &kp MINUS                         &kp GREATER_THAN              &kp BSLH             &kp GRAVE  &kp UNDERSCORE           &kp FSLH                        &kp TILDE                 &kp SEMI                    &trans
+&trans  &kp LESS_THAN        &kp PIPE             &mt RA(M) MINUS                   &kp GREATER_THAN              &kp BSLH             &kp GRAVE  &kp UNDERSCORE           &kp FSLH                        &kp TILDE                 &kp SEMI                    &trans
                                                   &trans                            &trans                        &trans               &trans     &trans                   &trans
             >;
         };
