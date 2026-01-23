@@ -116,10 +116,10 @@
             //                   | ESC | SPC | TAB |   | ENT | BSP  | DEL |
 
             bindings = <
-            &kp B             &kp L        &kp D               &kp W              &kp Z              &kp SQT            &kp F                  &kp O               &kp U            &kp J
-            &hrmp LEFT_ALT N  &hrm LGUI R  &hrm LEFT_SHIFT T   &hrm LCTRL S       &kp G              &kp Y              &hrm RCTRL H           &hrm RIGHT_SHIFT A  &hrm LEFT_GUI E  &hrmp LEFT_ALT I
-&caps_word  &kp Q             &kp X        &kp M               &kp C              &kp V              &kp K              &kp P                  &kp COMMA           &kp DOT          &kp FSLH          &kp SEMI
-                                           &hold_tap 1 ESCAPE  &hold_tap 2 SPACE  &hold_tap 3 TAB    &hold_tap 4 ENTER  &hold_tap 2 BACKSPACE  &hold_tap 5 DELETE
+        &kp B             &kp L        &kp D               &kp W              &kp Z              &kp SQT            &kp F                  &kp O               &kp U            &kp J
+        &hrmp LEFT_ALT N  &hrm LGUI R  &hrm LEFT_SHIFT T   &hrm LCTRL S       &kp G              &kp Y              &hrm RCTRL H           &hrm RIGHT_SHIFT A  &hrm LEFT_GUI E  &hrmp LEFT_ALT I
+&tog 6  &kp Q             &kp X        &kp M               &kp C              &kp V              &kp K              &kp P                  &kp COMMA           &kp DOT          &kp FSLH          &kp SEMI
+                                       &hold_tap 1 ESCAPE  &hold_tap 2 SPACE  &hold_tap 3 TAB    &hold_tap 4 ENTER  &hold_tap 2 BACKSPACE  &hold_tap 5 DELETE
             >;
         };
 
@@ -201,19 +201,19 @@
             //                   |     |PL/PS|     |   |     |     |     |
 
             bindings = <
-        &trans  &trans      &kp C_VOLUME_UP  &trans            &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &kp K_PREV  &kp C_VOL_DN     &kp K_NEXT        &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans      &kp K_MUTE       &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans           &kp K_PLAY_PAUSE  &trans    &trans  &trans  &trans
+        &trans  &trans      &kp C_VOLUME_UP  &trans            &kp C_BRI_INC    &trans  &trans  &trans  &trans  &trans
+        &trans  &kp K_PREV  &kp C_VOL_DN     &kp K_NEXT        &kp C_BRI_DEC    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &kp K_MUTE       &trans            &trans           &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans           &kp K_PLAY_PAUSE  &trans           &trans  &trans  &trans
             >;
         };
 
         mouse {
             bindings = <
-        &trans        &mkp MB4       &mkp MB3    &mkp MB5   &trans      &trans  &msc SCRL_UP    &trans          &trans           &trans
-        &kp LEFT_ALT  &kp LEFT_META  &kp LSHIFT  &kp LCTRL  &trans      &trans  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
-&trans  &trans        &trans         &trans      &trans     &trans      &trans  &msc SCRL_DOWN  &mmv MOVE_DOWN  &trans           &trans  &trans
-                                     &to 0       &mkp MB1   &mkp MB2    &trans  &mkp MB1        &mkp MB2
+        &trans        &mkp MB4       &mkp MB3    &mkp MB5   &trans       &trans  &msc SCRL_UP    &trans          &trans           &trans
+        &kp LEFT_ALT  &kp LEFT_META  &kp LSHIFT  &kp LCTRL  &trans       &trans  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
+&trans  &trans        &kp LC(X)      &trans      &kp LC(C)  &kp LC(V)    &trans  &msc SCRL_DOWN  &mmv MOVE_DOWN  &trans           &trans  &trans
+                                     &to 0       &mkp MB1   &mkp MB2     &trans  &mkp MB1        &mkp MB2
             >;
         };
     };
