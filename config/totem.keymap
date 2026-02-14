@@ -98,9 +98,16 @@
             layers = <0 1 2 3 4 5 6>;
         };
 
-        gaming {
+        tog7 {
             bindings = <&tog 7>;
             key-positions = <34 35>;
+            layers = <0 1 2 3 4 5 6>;
+        };
+
+        tog0 {
+            bindings = <&tog 0>;
+            key-positions = <34 35>;
+            layers = <7>;
         };
     };
 
