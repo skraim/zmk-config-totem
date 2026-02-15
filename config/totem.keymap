@@ -101,20 +101,13 @@
         tog7 {
             bindings = <&tog 7>;
             key-positions = <34 35>;
-            layers = <0 1 2 3 4 5 6>;
-        };
-
-        tog0 {
-            bindings = <&tog 0>;
-            key-positions = <34 35>;
-            layers = <7>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        alpha {
             display-name = "alpha";
 
             // ------------------------------------------------------------------------------
@@ -223,6 +216,8 @@
 &trans  &trans        &kp LC(X)      &trans      &kp LC(C)  &kp LC(V)    &trans  &msc SCRL_DOWN  &mmv MOVE_DOWN  &trans           &trans  &trans
                                      &to 0       &mkp MB1   &mkp MB2     &trans  &mkp MB1        &mkp MB2
             >;
+
+            label = "mouse";
         };
 
         gaming {
@@ -232,6 +227,8 @@
 &kp ESC  &kp Q  &kp X  &kp M      &kp C      &kp V        &kp K      &kp P     &kp COMMA  &kp DOT  &kp FSLH  &kp SEMI
                        &kp LCTRL  &kp SPACE  &kp LSHFT    &kp ENTER  &kp BSPC  &kp TAB
             >;
+
+            label = "gaming";
         };
     };
 };
